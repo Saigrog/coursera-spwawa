@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="LunchCheck">
+  <head>
+    <meta charset="utf-8">
+    <title>Module 1 Assignment 1</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <style media="all">
+      .success {
+        color: green;
+      }
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body ng-controller="LunchCheckController">
+    <h1>Module 1 Assignment 1</h1>
+    <div>
+      Enter a comma separated list of items you had for lunch:<br>
+      <input type="text" ng-model="lunchItems">
+      <button type="button" ng-click="checkNumberOfItems()">Check number of items</button><br>
+      <small>This does NOT consider empty items, i.e., , , against the count.</small>
+    </div>
+    <div class="{{messageStatus}}">
+      {{message}}
+    </div>
+  </body>
+</html>
