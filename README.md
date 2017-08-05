@@ -1,37 +1,9 @@
-## Welcome to GitHub Pages
+## Welcome to my GitHub pages for the Coursera course Single Page Web Apps with AngularJS
 
-You can use the [editor on GitHub](https://github.com/Saigrog/coursera-spwawa/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This will be used to post submissions.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Module 1
+## [Assignment 1](https://saigrog.github.io/coursera-spwawa/assignments/1/)
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Saigrog/coursera-spwawa/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+The assigment brief can be found [here.](https://github.com/jhu-ep-coursera/fullstack-course5/blob/master/assignments/assignment1/Assignment-1.md)
+The assignment app can be found [here.](https://saigrog.github.io/coursera-spwawa/assignments/1/)
