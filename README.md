@@ -1,4 +1,4 @@
-## Welcome to my GitHub pages for the Coursera course Single Page Web Apps with AngularJS
+## Assignment submissions for the Coursera course [Single Page Web Apps with AngularJS](https://www.coursera.org/learn/single-page-web-apps-with-angularjs)
 
 This will be used to post submissions.
 
