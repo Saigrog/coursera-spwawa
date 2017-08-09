@@ -3,7 +3,13 @@
 This will be used to post submissions.
 
 # Module 1
-## Assignment 1
+## Assignment
 
-- The assigment brief can be found [here.](https://github.com/jhu-ep-coursera/fullstack-course5/blob/master/assignments/assignment1/Assignment-1.md)
+- The assignment brief can be found [here.](https://github.com/jhu-ep-coursera/fullstack-course5/blob/master/assignments/assignment1/Assignment-1.md)
 - My assignment app submission can be found [here.](https://saigrog.github.io/coursera-spwawa/assignments/1/)
+
+# Module 2
+## Assignment
+
+- The assignment brief can be found [here.](https://github.com/jhu-ep-coursera/fullstack-course5/blob/master/assignments/assignment2/Assignment-2.md)
+- My assignment app submission can be found [here.](https://saigrog.github.io/coursera-spwawa/assignments/2/)
