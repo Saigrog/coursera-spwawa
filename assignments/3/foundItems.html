@@ -1,0 +1,27 @@
+<!-- Start of the list of found items -->
+<div class="col col-lg-8">
+  <div class="card">
+    <div class="card-header">
+      Search results
+    </div>
+    <div class="card-block">
+      <ul class="list-group">
+        <li ng-repeat="item in foundCtrl.items" class="list-group-item flex-column align-items-start">
+          <div class="">
+            <span class="mb-1">{{item.name}}, {{item.short_name}}, {{item.description}}</span>
+            <button ng-click="foundCtrl.onRemove({index: $index});" class="btn btn-warning btn-sm">Don't want this one!</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End of the list of found items -->
+<!--
+<ul>
+  <li ng-repeat="item in foundCtrl.items">
+    {{ item.name }}, {{ item.short_name }}, {{item.description}}
+    <button ng-click="foundCtrl.onRemove({index: $index});">Don't want this one!</button>
+  </li>
+</ul>
+<div ng-if="foundCtrl.nothingFound()">Nothing found.</div> -->
