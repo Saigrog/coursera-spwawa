@@ -22,7 +22,6 @@
             <div class="form-group narrow-button">
               <button class="btn btn-primary" ng-click="searchCtrl.searchMenuItems()">Narrow It Down For Me!</button>
             </div>
-
           </div>
         </div>
       </div>
@@ -36,37 +35,3 @@
   <script src="app.js"></script>
 </body>
 </html>
-
-
-<!-- <!doctype html>
-<html ng-app='MenuSearchApp' lang="en">
-  <head>
-    <title>Narrow Down Your Menu Choice</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="angular.min.js"></script>
-    <script src="app.js"></script>
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/styles.css">
-  </head>
-<body>
-   <div ng-controller="NarrowItDownController as searchCtrl" class="container">
-    <h1>Narrow Down Your Chinese Menu Choice</h1>
-
-    <div class="form-group">
-      <input ng-model="searchCtrl.searchTerm" type="text" placeholder="search term" class="form-control">
-    </div>
-    <div class="form-group narrow-button">
-      <button ng-click="searchCtrl.searchMenuItems()" class="btn btn-primary">Narrow It Down For Me!</button>
-    </div>
-
-    <p><br/><hr/></p>
-
-    <found-items
-      items="searchCtrl.found"
-      on-remove="searchCtrl.removeItem(index)">
-    </found-items>
-
-  </div>
-
-</body>
-</html> -->
