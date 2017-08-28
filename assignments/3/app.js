@@ -1,4 +1,5 @@
 (function() {
+
   'use strict'
 
   angular.module('MenuSearchApp', [])
@@ -22,14 +23,18 @@
         MenuSearchService.clear();
       } else {
         MenuSearchService.getMatchedMenuItems(searchCtrl.searchTerm)
-          .then(function(result) {
+          .then((result) => {
+            console.log('API result: ', result);
             searchCtrl.found = result;
+          })
+          .catch((error) => {
+            console.log('An error occurred: ', error);
           });
       }
 
     }
 
-    searchCtrl.removeItem = function(itemIndex) {
+    searchCtrl.removeItem = (itemIndex) => {
       MenuSearchService.removeItem(itemIndex);
     };
   }
@@ -53,7 +58,7 @@
 
     let foundCtrl = this;
 
-    foundCtrl.nothingFound = () => {
+    foundCtrl.isNothingFound = () => {
       if (foundCtrl.items.length === 0) {
         return true;
       }
@@ -66,30 +71,31 @@
   function MenuSearchService($http, ApiBasePath) {
 
     let service = this,
-        foundItems = [];
+      foundItems = [];
 
     service.getMatchedMenuItems = (searchTerm) => {
 
-      foundItems.splice(0, foundItems.length);
+      service.clear();
 
       if (searchTerm === "") {
         return foundItems;
       }
+
       return $http({
         method: "GET",
         url: (ApiBasePath + "/menu_items.json")
-      }).then(function(result) {
+      }).then((result) => {
 
-        let allItems = result.data.menu_items;
+        let menuItemResults = result.data.menu_items;
 
-        foundItems.splice(0, foundItems.length);
-
-        for (let index = 0; index < allItems.length; ++index) {
-          if (allItems[index].description.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1) {
-            foundItems.push(allItems[index]);
+        menuItemResults.forEach((item) => {
+          if (item.description.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1) {
+            foundItems.push(item);
           }
-        }
+        });
+
         return foundItems;
+
       });
     };
 
