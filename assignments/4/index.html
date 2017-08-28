@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" ng-app='MenuSearchApp'>
+<html lang="en" ng-app='MenuApp'>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Module 3 Assignment Submission</title>
+  <title>Module 4 Assignment Submission</title>
   <link rel="stylesheet" type="text/css" href="../../libraries/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h3 class="text-center">Module 3 Assignment</h3>
+    <h3 class="text-center">Welcome to our restaurant</h3>
     <div class="row justify-content-md-center" ng-controller="NarrowItDownController as searchCtrl">
       <div class="col col-lg-4">
         <div class="card">
@@ -16,13 +16,7 @@
             Narrow Down Your Chinese Menu Choice
           </div>
           <div class="card-block">
-            <div class="form-group">
-              <input type="text" placeholder="Search term" class="form-control" ng-model="searchCtrl.searchTerm">
-            </div>
-            <div class="form-group narrow-button">
-              <button class="btn btn-primary" ng-click="searchCtrl.searchMenuItems()">Narrow It Down For Me!</button>
-            </div>
-
+            <ui-view></ui-view>
           </div>
         </div>
       </div>
@@ -32,7 +26,21 @@
   </div>
   <!-- End of the container -->
 
+  <!-- Libraries -->
   <script src="../../libraries/angular.min.js"></script>
-  <script src="app.js"></script>
+  <script src="../../libraries/angular-ui-router.min.js"></script>
+
+  <!-- Modules -->
+  <script src="menuapp/menuapp.module.js"></script>
+  <script src="data/data.module.js"></script>
+
+  <!-- Routes -->
+  <script src="routes.js"></script>
+
+  <script src="menuapp/categories.component.js"></script>
+  <script src="menuapp/items.component.js"></script>
+  <script src="menuapp/category-list.controller.js"></script>
+  <script src="menuapp/items.controller.js"></script>
+  <script src="data/menudata.service.js"></script>
 </body>
 </html>
